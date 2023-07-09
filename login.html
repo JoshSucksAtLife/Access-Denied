@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NAHHH</title>
+  <style>
+    /* Styles for the login page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+
+    input[type="button"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script type="text/javascript">
+    function login() {
+      var password = document.getElementById("password").value;
+
+      // Update the passwords as per your requirement
+      var allowedPasswords = ["PDC", "pdc"];
+
+      if (allowedPasswords.includes(password)) {
+        // Redirect to the desired page upon successful login
+        window.location.href = "GoodStuff.html";
+      } else {
+        alert("Invalid password. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>WHATS DA PASSWORD</h2>
+    <form>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <br><br>
+      <input type="button" value="Login" onclick="login()">
+    </form>
+  </div>
+</body>
+</html>

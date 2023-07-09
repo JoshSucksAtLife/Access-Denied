@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Access Denied</title>
+  <script type="text/javascript">
+    var typedText = '';
+
+    function checkTypedText() {
+      if (typedText.toLowerCase() === 'pdc is the best') {
+        // Redirect to the login page
+        window.location.href = 'login.html';
+      }
+    }
+
+    document.addEventListener('keydown', function(event) {
+      // Get the pressed key
+      var key = event.key.toLowerCase();
+
+      // Append the pressed key to the typedText variable
+      typedText += key;
+
+      // Call the function to check if the typed text matches
+      checkTypedText();
+    });
+  </script>
+</head>
+<body>
+  <h2>Access Denied</h2>
+  <p>What are you doing here? Go away.</p>
+</body>
+</html>
