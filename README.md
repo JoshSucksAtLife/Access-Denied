@@ -1,3 +1,3 @@
 # Access-Denied
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-z466vb)
+You don't have access. Or do you? Look in the code and find out!
